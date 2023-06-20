@@ -130,6 +130,7 @@ static int fs_read(const char* path, char* buf, size_t size, off_t offset, struc
   - '-ENOENT' if the file does not exist.
 
 ## Issues & Limitations
+One issue encountered during the execution of the program is a segmentation fault. It appears that there might be problems in synchronizing the functions, and this issue has not been resolved. Prior to using locks, folders and files were created in the mounted directory, but they were not created accurately.
 
 ## Contact Information
 21900805 Yewon Hong (21900805@handong.ac.kr)
